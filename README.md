@@ -8,7 +8,13 @@ Prerequisites
 Java - installed JAVA_PATH is SET
 Maven - installed - able to run mvn commands
 
-Steps to Run
+Sample People and Center Files in JSON format
+ 
+People file ``` src/main/resources/People.txt```
+Center file ``` src/main/resources/Center.txt```
+
+
+#Steps to Run
 
 1. Go to root Directory in Terminal/cmd
 
