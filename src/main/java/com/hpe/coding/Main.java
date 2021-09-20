@@ -32,12 +32,13 @@ public class Main {
             /* create a reader for reading centers list file */
             try {
                 String centerFileName = System.getProperty("centerFile");
-                System.out.println("centerFileName=" + centerFileName);
 
                 if (centerFileName == null) {
+                    System.out.println("centerFile=" + "Resource://Center.txt");
                     resource = com.hpe.coding.Main.class.getResource("/Center.txt");
                     reader = Files.newBufferedReader(Paths.get(resource.toURI()));
                 } else {
+                    System.out.println("centerFile="+centerFileName);
                     reader = Files.newBufferedReader(Paths.get(centerFileName));
                 }
 
@@ -61,11 +62,13 @@ public class Main {
             try {
             /* create a reader for reading people list file */
             String peopleFileName = System.getProperty("peopleFile");
-            System.out.println("peopleFile="+peopleFileName);
+
             if(peopleFileName == null) {
+                System.out.println("peopleFile=" + "Resource://People.txt");
                 resource = com.hpe.coding.Main.class.getResource("/People.txt");
                 reader = Files.newBufferedReader(Paths.get(resource.toURI()));
             } else {
+                System.out.println("peopleFile="+peopleFileName);
                 reader = Files.newBufferedReader(Paths.get(peopleFileName));
             }
 
